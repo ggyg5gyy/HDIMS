@@ -43,13 +43,13 @@ if(isset($_POST['update']))
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'evercarehospital300@gmail.com ';       // 🔴 replace
-            $mail->Password   = 'nqymekqykevyhvth';          // 🔴 replace
+            $mail->Username   = '';       // same here
+            $mail->Password   = '';          // upna gmail app password likhein kindly ma nahi btaoon ....
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
-            $mail->setFrom('evercarehospital300@gmail.com ', 'HDIMS Support');
-            $mail->addReplyTo('evercarehospital300@gmail.com ', 'HDIMS Support');
+            $mail->setFrom('yahan bhi upni likho', 'HDIMS Support');
+            $mail->addReplyTo('same here', 'HDIMS Support');
             $mail->addAddress($useremail, $username);
 
             $mail->isHTML(true);
